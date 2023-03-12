@@ -13,7 +13,7 @@
                 display: flex;
                 justify-content: space-evenly;
             }
-            form {
+            .create-owner-form {
                 display: flex;
                 flex-direction: column;
                 margin-top: 20px;
@@ -29,7 +29,7 @@
                 border-radius: 5px;
                 box-shadow: 0px 0px 5px #ccc;
             }
-            button {
+            .add-owner-button {
                 width: 15%;
                 padding: 10px 20px;
                 background-color: #008CBA;
@@ -39,7 +39,7 @@
                 box-shadow: 0px 0px 5px #ccc;
                 cursor: pointer;
             }
-            button:hover {
+            .add-owner-button:hover {
                 background-color: #006B8F;
             }
             ul {
@@ -60,7 +60,7 @@
         </ul>
         <br/>
         @endif
-        <form method="post" action="{{ route('owner.store') }}">
+        <form class="create-owner-form" method="post" action="{{ route('owner.store') }}">
             @csrf
             <div class="dropdown">
                 <select name="person_id" id="person_id">
@@ -77,7 +77,7 @@
                 </select>
             </div>
             <div style="text-align: center; margin: 10px 0;">
-                <button type="submit">Add ownership</button>
+                <button class="add-owner-button" type="submit">Add ownership</button>
             </div>
         </form>
     </body>

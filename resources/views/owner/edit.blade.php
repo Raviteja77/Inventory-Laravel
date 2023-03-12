@@ -7,6 +7,8 @@
                 font-family: Arial, sans-serif;
                 font-size: 16px;
                 line-height: 1.5;
+                padding: 0;
+                margin: 0;
             }
 
             .edit-owner-form {

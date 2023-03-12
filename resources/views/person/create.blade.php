@@ -12,7 +12,7 @@
             h1 {
                 text-align: center;
             }
-            form {
+            .create-asset-form {
                 width: 45%;
                 display: flex;
                 flex-direction: column;
@@ -36,7 +36,7 @@
                 border-radius: 5px;
                 box-shadow: 0px 0px 5px #ccc;
             }
-            button {
+            .add-person-button {
                 padding: 10px 20px;
                 background-color: #008CBA;
                 color: #fff;
@@ -45,7 +45,7 @@
                 box-shadow: 0px 0px 5px #ccc;
                 cursor: pointer;
             }
-            button:hover {
+            .add-person-button:hover {
                 background-color: #006B8F;
             }
             ul {
@@ -66,7 +66,7 @@
         </ul>
         <br/>
         @endif
-        <form method="post" action="{{ route('person.store') }}">
+        <form class="create-asset-form" method="post" action="{{ route('person.store') }}">
             @csrf
             <label for="first_name">First Name:</label>
             <input type="text" name="first_name" id="first_name">
@@ -77,7 +77,7 @@
             <label for="date_of_birth">Date of Birth:</label>
             <input type="date" name="date_of_birth" id="date_of_birth">
             <div style="text-align: center; margin: 10px 0;">
-                <button type="submit">Add Person</button>
+                <button class="add-person-button" type="submit">Add Person</button>
             </div>
         </form>
     </body>
