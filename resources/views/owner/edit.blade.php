@@ -9,7 +9,7 @@
                 line-height: 1.5;
             }
 
-            form {
+            .edit-owner-form {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -74,7 +74,7 @@
         </ul>
         <br/>
         @endif
-        <form method="post" action="{{ route('owner.update', $person->id) }}">
+        <form class="edit-owner-form" method="post" action="{{ route('owner.update', $person->id) }}">
             @csrf
             @method('PATCH')
             <label for="person_id">Person:</label>

@@ -6,6 +6,8 @@
             body {
                 font-family: Arial, sans-serif;
                 background-color: #f1f1f1;
+                padding: 0;
+                margin: 0;
             }
             h1 {
                 text-align: center;

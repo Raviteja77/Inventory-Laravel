@@ -19,7 +19,7 @@
                 background-color: #fff;
                 box-shadow: 0px 0px 10px #ccc;
             }
-            form {
+            .edit-asset-form {
                 margin-top: 20px;
                 padding: 20px;
             }
@@ -76,7 +76,7 @@
             </ul>
             <br/>
             @endif
-            <form method="post" action="{{ route('asset.update', $item->id) }}">
+            <form class="edit-asset-form" method="post" action="{{ route('asset.update', $item->id) }}">
                 @csrf
                 @method('PATCH')
                 <label for="name">Name:</label>

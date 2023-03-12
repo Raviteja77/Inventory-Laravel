@@ -33,8 +33,14 @@
                 text-decoration: none;
             }
 
-            .menu a:hover {
+            .menu a:hover, .logout:hover {
                 text-decoration: underline;
+            }
+            .logout {
+                border: none;
+                background: transparent;
+                color: #fff;
+                font-size: 16px;
             }
 
         </style>
@@ -48,8 +54,8 @@
                 @auth
                 <li><form method="POST" action="{{ route('logout') }}">
                         @csrf
-                        <button type="submit">Logout</button>
-                </form></li>
+                        <button class="logout">Logout</button>
+                    </form></li>
                 @else
                 <li><a href="{{ route('login') }}">Login</a></li>
                 <li><a href="{{ route('register') }}">Register</a></li>

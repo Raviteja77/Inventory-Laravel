@@ -7,11 +7,13 @@
             body {
                 font-family: Arial, sans-serif;
                 background-color: #f1f1f1;
+                padding: 0;
+                margin: 0;
             }
             h1 {
                 text-align: center;
             }
-            form {
+            .edit-person-form {
                 width: 45%;
                 display: flex;
                 flex-direction: column;
@@ -35,7 +37,7 @@
                 border-radius: 5px;
                 box-shadow: 0px 0px 5px #ccc;
             }
-            button {
+            .save-button {
                 padding: 10px 20px;
                 background-color: #4CAF50;
                 color: #fff;
@@ -44,7 +46,7 @@
                 box-shadow: 0px 0px 5px #ccc;
                 cursor: pointer;
             }
-            button:hover {
+            .save-button:hover {
                 background-color: #3e8e41;
             }
             ul {
@@ -65,7 +67,7 @@
         </ul>
         <br/>
         @endif
-        <form method="post" action="{{ route('person.update', $person->id) }}">
+        <form class="edit-person-form" method="post" action="{{ route('person.update', $person->id) }}">
             @csrf
             @method('PATCH')
             <label for="first_name">First Name:</label>
@@ -77,7 +79,7 @@
             <label for="date_of_birth">Date of Birth:</label>
             <input type="date" name="date_of_birth" id="date_of_birth" value="{{ $person->date_of_birth }}">
             <div style="text-align: center; margin: 10px 0;">
-                <button type="submit">Save Changes</button>
+                <button class="save-button" type="submit">Save Changes</button>
             </div>
         </form>
     </body>
