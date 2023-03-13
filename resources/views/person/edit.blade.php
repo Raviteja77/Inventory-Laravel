@@ -3,62 +3,11 @@
 <html>
     <head>
         <title>Edit Person</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f1f1f1;
-                padding: 0;
-                margin: 0;
-            }
-            h1 {
-                text-align: center;
-            }
-            .edit-person-form {
-                width: 45%;
-                display: flex;
-                flex-direction: column;
-                margin-top: 20px;
-                padding: 20px;
-                background-color: #fff;
-                box-shadow: 0px 0px 10px #ccc;
-                position: absolute;
-                left: 25%;
-            }
-            label {
-                margin: 1rem 0;
-            }
-            input[type="text"],
-            input[type="email"],
-            input[type="date"] {
-                width: 95%;
-                padding: 10px;
-                margin-bottom: 10px;
-                border: none;
-                border-radius: 5px;
-                box-shadow: 0px 0px 5px #ccc;
-            }
-            .save-button {
-                padding: 10px 20px;
-                background-color: #4CAF50;
-                color: #fff;
-                border: none;
-                border-radius: 5px;
-                box-shadow: 0px 0px 5px #ccc;
-                cursor: pointer;
-            }
-            .save-button:hover {
-                background-color: #3e8e41;
-            }
-            ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                color: red;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}">
     </head>
     <body>
         @include('menu')
+        <h1>Edit Person</h1>
         @if($errors->any())
         <ul>
             @foreach($errors->all() as $error)
@@ -79,7 +28,7 @@
             <label for="date_of_birth">Date of Birth:</label>
             <input type="date" name="date_of_birth" id="date_of_birth" value="{{ $person->date_of_birth }}">
             <div style="text-align: center; margin: 10px 0;">
-                <button class="save-button" type="submit">Save Changes</button>
+                <button class="save-changes button" type="submit">Save Changes</button>
             </div>
         </form>
     </body>

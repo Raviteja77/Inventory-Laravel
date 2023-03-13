@@ -1,0 +1,199 @@
+
+/*Styles for owner create page*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+.dropdown {
+    display: flex;
+    justify-content: space-evenly;
+}
+.dropdown-select {
+    width: 35%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+}
+.create-owner-form, .create-asset-form, .create-person-form, .edit-asset-form, .edit-owner-form, .edit-person-form, .show-asset, .show-person {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.create-asset-form, .create-person-form, .edit-asset-form, .edit-owner-form, .edit-person-form, .show-asset, .show-person {
+    width: 45%;
+    position: absolute;
+    left: 25%;
+}
+
+.add-owner-button {
+    width: 15%;
+
+}
+
+.button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    cursor: pointer;
+}
+
+.create-asset, .add-owner, .add-person, .save-changes {
+    background-color: #008CBA;
+}
+.add-item-to-inventory, .add-ownership, .create-person {
+    background-color: #4CAF50;
+    text-decoration: none;
+}
+.edit {
+    background-color: #6c757d;
+    text-decoration: none;
+}
+.edit:hover, .delete:hover {
+    background-color: #444;
+}
+.delete {
+    background-color: #f44336;
+}
+
+.create-asset:hover, .add-owner:hover, .add-person:hover {
+    background-color: #006B8F;
+}
+.save-changes {
+    background-color: #4CAF50;
+}
+.save-changes:hover, .add-item-to-inventory:hover, .add-ownership:hover, .create-person:hover {
+    background-color: #3e8e41;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: red;
+}
+ul li {
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+input[type="text"], input[type="number"], input[type="date"], input[type="email"], .edit-owner-dropdown {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* Header styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* Table styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.asset-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.asset-list li {
+    display: inline-block;
+    color: #000;
+}
+
+.asset-list li:not(:last-child)::after {
+    content: ",";
+    margin-right: 5px;
+}
+
+
+/*Styles for index asset page*/
+
+
+
+
+
+            /* Form button styles */
+            .btn {
+                display: inline-block;
+                background-color: #333;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            .btn:hover {
+                background-color: #444;
+            }
+
+
+
+
+
+
+
+
+
