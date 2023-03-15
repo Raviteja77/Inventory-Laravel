@@ -30,6 +30,7 @@
             <tbody>
                 <!--The following loop iterates through each person in the $person array and displays their information in a table row.-->
                 @foreach($person as $p)
+                @if($p->assets != null and count($p->assets) > 0)
                 <tr>
                     <td>{{ $p->first_name }}</td>
                     <td>{{ $p->last_name }}</td>
@@ -52,6 +53,7 @@
                         </form>
                     </td>
                 </tr>
+                @endif
                 @endforeach
         </table>
         <!--The following div contains a link to add a new ownership.-->

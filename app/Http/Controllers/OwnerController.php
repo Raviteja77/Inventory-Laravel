@@ -16,8 +16,7 @@ class OwnerController extends Controller {
      * Display a listing of the resource.
      */
     public function index() {
-        // Retrieve all Person models with their related Asset models
-        $person = Person::with('assets')->get();
+        $person = Person::all();
         return view('owner.index', compact('person'));
     }
 
@@ -34,9 +33,12 @@ class OwnerController extends Controller {
      * Store a newly created resource in storage.
      */
     public function store(Request $request) {
-        Asset::whereId($request->input('asset_id'))->update(['person_id' => $request->input('person_id')]);
+        if($request->input('person_id') != 'none' and $request->input('asset_id') != 'none') {
+            Asset::whereId($request->input('asset_id'))->update(['person_id' => $request->input('person_id')]);
         
-        return redirect('/owner')->with('success', 'Ownership created successfully');
+            return redirect('/owner')->with('success', 'Ownership created successfully');
+        }
+        return view('owner.error');
     }
     
     /**

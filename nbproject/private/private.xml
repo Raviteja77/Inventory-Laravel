@@ -3,18 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/var/www/inventory/resources/views/person/show.blade.php</file>
-            <file>file:/var/www/inventory/database/seeders/DatabaseSeeder.php</file>
+            <file>file:/var/www/inventory/database/migrations/2023_03_11_134545_add_person_id_to_assets_table.php</file>
             <file>file:/var/www/inventory/resources/views/asset/show.blade.php</file>
             <file>file:/var/www/inventory/public/css/styles.css</file>
-            <file>file:/var/www/inventory/resources/views/menu.blade.php</file>
             <file>file:/var/www/inventory/database/factories/PersonFactory.php</file>
-            <file>file:/var/www/inventory/resources/views/owner/index.blade.php</file>
+            <file>file:/var/www/inventory/app/Http/Controllers/OwnerController.php</file>
             <file>file:/var/www/inventory/resources/views/person/index.blade.php</file>
-            <file>file:/var/www/inventory/database/factories/AssetFactory.php</file>
-            <file>file:/var/www/inventory/resources/views/asset/edit.blade.php</file>
-            <file>file:/var/www/inventory/resources/views/asset/index.blade.php</file>
-            <file>file:/var/www/inventory/resources/views/person/edit.blade.php</file>
+            <file>file:/var/www/inventory/database/seeders/DatabaseSeeder.php</file>
+            <file>file:/var/www/inventory/database/migrations/2023_02_23_010430_create_inventory.php</file>
+            <file>file:/var/www/inventory/resources/views/owner/edit.blade.php</file>
+            <file>file:/var/www/inventory/resources/views/owner/create.blade.php</file>
+            <file>file:/var/www/inventory/database/migrations/2023_03_10_203538_create_person.php</file>
+            <file>file:/var/www/inventory/app/Http/Controllers/PersonController.php</file>
+            <file>file:/var/www/inventory/app/Http/Controllers/AssetController.php</file>
         </group>
     </open-files>
 </project-private>
