@@ -10,11 +10,14 @@
             <h1>Assets List</h1>
             @include('menu') <!-- Include the navigation menu -->
         </div>
-
         <!-- Display success message if it exists in session -->
         @if(session()->get('success'))
         <div style="background-color: #4CAF50; color: #fff; padding: 10px; margin: 10px 0;">{{ session()->get('success') }}</div>
         @endif
+
+        @if(count($asset) == 0)
+        <h1>Oops!! No asset added yet</h1>
+        @else
 
         <!-- Assets table -->
         <table>
@@ -39,6 +42,7 @@
             </tr>
             @endforeach
         </table>
+        @endif
 
         <!-- Button to add new asset item -->
         <div style="text-align: center; margin: 10px 0;">

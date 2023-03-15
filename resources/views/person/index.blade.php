@@ -17,7 +17,10 @@
         @if(session()->get('success'))
         <div style="background-color: #4CAF50; color: #fff; padding: 10px; margin: 10px 0;">{{ session()->get('success') }}</div>
         @endif
-
+        
+        @if(count($person) == 0)
+        <h1>Oops!! No person added yet</h1>
+        @else
         <!-- Display a table of people -->
         <table>
             <tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Date of Birth</td><td>Action</td></tr>
@@ -41,6 +44,7 @@
             </tr>
             @endforeach
         </table>
+        @endif
 
         <!-- Add Person button redirects to the person create form -->
         <div style="text-align: center; margin: 10px 0;">
