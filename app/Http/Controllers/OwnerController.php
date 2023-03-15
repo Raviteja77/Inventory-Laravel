@@ -45,14 +45,15 @@ class OwnerController extends Controller {
     public function edit(string $person_id) {
         $person = Person::findOrFail($person_id);
         $people = Person::all();
-        return view('owner.edit', array('person' => $person, 'people' => $people));
+        $assets = Asset::where('person_id', $person_id)->get();
+        return view('owner.edit', array('person' => $person, 'people' => $people, 'assets' => $assets));
     }
 
     /**
      * Update the specified resource in storage.
      */
     public function update(Request $request, string $person_id) {
-        Asset::where('person_id', $person_id)->update(['person_id' => $request->input('person_id')]);
+        Asset::whereId($request->input('id'))->update(['person_id' => $request->input('person_id')]);
         
         return redirect('/owner')->with('success', 'Owner changed successfully');
     }

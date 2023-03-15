@@ -1,13 +1,15 @@
-
 <!doctype html>
 <html>
     <head>
         <title>Showing Person: {{ $person->first_name }}</title>
+        <!-- Link to the external stylesheet -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}">
     </head>
     <body>
+        <!-- Include the menu partial -->
         @include('menu')
         <h1>Show Person</h1>
+        <!-- Display the details of the person -->
         <div class="show-person">
             <label for="first_name">First Name:</label>
             <input type="text" name="first_name" id="first_name" value="{{ $person->first_name }}">

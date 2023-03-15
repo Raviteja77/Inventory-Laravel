@@ -3,9 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/var/www/inventory/resources/views/owner/create.blade.php</file>
-            <file>file:/var/www/inventory/resources/views/asset/create.blade.php</file>
-            <file>file:/var/www/inventory/resources/views/person/create.blade.php</file>
+            <file>file:/var/www/inventory/resources/views/person/show.blade.php</file>
+            <file>file:/var/www/inventory/database/seeders/DatabaseSeeder.php</file>
+            <file>file:/var/www/inventory/resources/views/asset/show.blade.php</file>
+            <file>file:/var/www/inventory/public/css/styles.css</file>
+            <file>file:/var/www/inventory/resources/views/menu.blade.php</file>
+            <file>file:/var/www/inventory/database/factories/PersonFactory.php</file>
+            <file>file:/var/www/inventory/resources/views/owner/index.blade.php</file>
+            <file>file:/var/www/inventory/resources/views/person/index.blade.php</file>
+            <file>file:/var/www/inventory/database/factories/AssetFactory.php</file>
+            <file>file:/var/www/inventory/resources/views/asset/edit.blade.php</file>
+            <file>file:/var/www/inventory/resources/views/asset/index.blade.php</file>
+            <file>file:/var/www/inventory/resources/views/person/edit.blade.php</file>
         </group>
     </open-files>
 </project-private>
