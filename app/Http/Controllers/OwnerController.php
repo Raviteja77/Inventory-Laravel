@@ -16,7 +16,8 @@ class OwnerController extends Controller {
      * Display a listing of the resource.
      */
     public function index() {
-        $person = Person::all();
+        // Retrieve all Person models with their related Asset models
+        $person = Person::with('assets')->get();
         return view('owner.index', compact('person'));
     }
 

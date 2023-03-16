@@ -16,9 +16,7 @@
         @if(session()->get('success'))
         <div style="background-color: #4CAF50; color: #fff; padding: 10px; margin: 10px 0;">{{ session()->get('success') }}</div>
         @endif
-        <!--The following loop iterates through each person in the $person array and displays their information in a table row.-->
-        @foreach($person as $p)
-        @if($p->assets == null or count($p->assets) == 0)
+        @if(count($person) == 0 and count($asset) == 0)
         <h1>Oops!! No ownership added yet</h1>
         @else
         <!--The following table displays the list of owners and their assets.-->
@@ -32,6 +30,7 @@
                     <th>Action</th>
                 </tr>
             </thead>
+            
             <tbody>
                 <tr>
                     <td>{{ $p->first_name }}</td>
@@ -55,9 +54,10 @@
                         </form>
                     </td>
                 </tr>
+                @endif
+                @endforeach
         </table>
         @endif
-        @endforeach
         <!--The following div contains a link to add a new ownership.-->
         <div style="text-align: center; margin: 10px 0;">
             <a href="{{ route('owner.create') }}" class="add-ownership button">Add Ownership</a>
