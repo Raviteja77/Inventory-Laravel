@@ -17,7 +17,7 @@ class OwnerController extends Controller {
      */
     public function index() {
         // Retrieve all Person models with their related Asset models
-        $person = Person::with('assets')->get();
+        $person = Person::whereHas('assets')->with('assets')->get();
         return view('owner.index', compact('person'));
     }
 

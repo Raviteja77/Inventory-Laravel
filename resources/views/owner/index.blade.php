@@ -16,7 +16,7 @@
         @if(session()->get('success'))
         <div style="background-color: #4CAF50; color: #fff; padding: 10px; margin: 10px 0;">{{ session()->get('success') }}</div>
         @endif
-        @if(count($person) == 0 and count($asset) == 0)
+        @if(count($person) == 0)
         <h1>Oops!! No ownership added yet</h1>
         @else
         <!--The following table displays the list of owners and their assets.-->
@@ -32,6 +32,7 @@
             </thead>
             
             <tbody>
+                @foreach($person as $p)
                 <tr>
                     <td>{{ $p->first_name }}</td>
                     <td>{{ $p->last_name }}</td>
@@ -54,7 +55,6 @@
                         </form>
                     </td>
                 </tr>
-                @endif
                 @endforeach
         </table>
         @endif
