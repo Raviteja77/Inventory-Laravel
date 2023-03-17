@@ -1,0 +1,224 @@
+
+/* Applies to the entire page */
+body {
+    font-family: Arial, sans-serif; /* Sets the font family for the entire page */
+    background-color: #f1f1f1; /* Sets the background color for the entire page */
+    font-size: 16px; /* Sets the font size for the entire page */
+    line-height: 1.5; /* Sets the line height for the entire page */
+    margin: 0; /* Removes the default margin */
+    padding: 0; /* Removes the default padding */
+}
+
+/* Applies to dropdown elements */
+.dropdown {
+    display: flex; /* Displays elements as flex */
+    justify-content: space-evenly; /* Horizontally centers child elements */
+}
+
+/* Applies to dropdown select elements */
+.dropdown-select {
+    width: 35%; /* Sets the width of the dropdown select element */
+    padding: 10px; /* Sets the padding of the dropdown select element */
+    margin-bottom: 10px; /* Sets the margin bottom of the dropdown select element */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Adds a rounded border */
+    box-shadow: 0px 0px 5px #ccc; /* Adds a shadow */
+}
+
+/* Applies to create, edit, and show forms for assets, people, and ownership */
+.create-owner-form, .create-asset-form, .create-person-form, .edit-asset-form, .edit-owner-form, .edit-person-form, .show-asset, .show-person {
+    display: flex; /* Displays elements as flex */
+    flex-direction: column; /* Sets the flex direction to column */
+    margin-top: 20px; /* Sets the margin top of the elements */
+    padding: 20px; /* Sets the padding of the elements */
+    background-color: #fff; /* Sets the background color of the elements */
+    box-shadow: 0px 0px 10px #ccc; /* Adds a shadow to the elements */
+}
+
+/* Applies to create, edit, and show forms for assets, people, and ownership */
+.create-asset-form, .create-person-form, .edit-asset-form, .edit-owner-form, .edit-person-form, .show-asset, .show-person {
+    width: 45%; /* Sets the width of the elements */
+    position: absolute; /* Positions the elements absolutely */
+    left: 25%; /* Sets the left position of the elements */
+}
+
+/* Applies to the add owner button */
+.add-owner-button {
+    width: 15%; /* Sets the width of the button */
+}
+
+/* Applies to buttons */
+.button {
+    padding: 10px 20px; /* Sets the padding of the buttons */
+    color: #fff; /* Sets the color of the buttons */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Adds a rounded border */
+    box-shadow: 0px 0px 5px #ccc; /* Adds a shadow */
+    cursor: pointer; /* Sets the cursor to a pointer */
+}
+
+/* Applies to create asset, add owner, add person, and save changes buttons */
+.create-asset, .add-owner, .add-person, .save-changes {
+    background-color: #008CBA; /* Sets the background color of the buttons */
+}
+
+/* Applies to add item to inventory, add ownership, and create person buttons */
+.add-item-to-inventory, .add-ownership, .create-person {
+    background-color: #4CAF50; /* Sets the background color of the buttons */
+    text-decoration: none
+}
+
+.edit {
+    background-color: #6c757d; /* sets the background color of elements with the class "edit" to a light gray */
+    text-decoration: none; /* removes the underline from links with the class "edit" */
+}
+.edit:hover, .delete:hover {
+    background-color: #444; /* sets the background color of elements with the class "edit" or "delete" to a darker gray when hovered over */
+}
+.delete {
+    background-color: #f44336; /* sets the background color of elements with the class "delete" to a red color */
+}
+
+.create-asset:hover, .add-owner:hover, .add-person:hover {
+    background-color: #006B8F; /* sets the background color of elements with the class "create-asset", "add-owner", or "add-person" to a dark blue color when hovered over */
+}
+.save-changes {
+    background-color: #4CAF50; /* sets the background color of elements with the class "save-changes" to a green color */
+}
+.save-changes:hover, .add-item-to-inventory:hover, .add-ownership:hover, .create-person:hover {
+    background-color: #3e8e41; /* sets the background color of elements with the class "save-changes", "add-item-to-inventory", "add-ownership", or "create-person" to a darker green color when hovered over */
+}
+
+ul {
+    list-style: none; /* removes the bullet points from unordered lists */
+    padding: 0;
+    margin: 0;
+    color: red; /* sets the text color of unordered lists to red */
+}
+
+ul li {
+    margin-bottom: 8px; /* sets the bottom margin of list items within unordered lists to 8 pixels */
+}
+
+h1 {
+    font-size: 24px; /* sets the font size of h1 elements to 24 pixels */
+    font-weight: bold; /* sets the font weight of h1 elements to bold */
+    margin-bottom: 20px; /* sets the bottom margin of h1 elements to 20 pixels */
+    text-align: center; /* centers the text within h1 elements */
+}
+
+label {
+    display: block; /* sets labels to display as a block element */
+    margin-bottom: 10px; /* sets the bottom margin of labels to 10 pixels */
+    font-weight: bold; /* sets the font weight of labels to bold */
+    margin: 1rem 0; /* sets the margin of labels to 1 "rem" on top and bottom, and 0 on the left and right */
+}
+
+input[type="text"], input[type="number"], input[type="date"], input[type="email"], .edit-owner-dropdown {
+    width: 95%; /* sets the width of input elements with the types "text", "number", "date", and "email", as well as elements with the class "edit-owner-dropdown", to 95% of their parent container */
+    padding: 10px; /* sets the padding of input elements to 10 pixels */
+    margin-bottom: 20px; /* sets the bottom margin of input elements to 20 pixels */
+    border: 1px solid #ccc; /* sets the border of input elements to a 1 pixel solid line with a light gray color */
+    border-radius: 5px; /* sets the border radius of input elements to 5 pixels */
+    box-shadow: 0px 0px 5px #ccc; /* sets a box shadow for input elements with a light gray color */
+}
+
+/* Style for error messages */
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* Header styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* Table styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style for list of assets */
+.asset-list {
+    list-style-type: none; /* Remove bullet points from the list */
+    margin: 0;
+    padding: 0;
+}
+
+.asset-list li {
+    display: inline-block; /* Display items horizontally */
+    color: #000; /* Set the color of list items to black */
+}
+
+.asset-list li:not(:last-child)::after {
+    content: ","; /* Add a comma after each list item except the last one */
+    margin-right: 5px; /* Add margin after each comma */
+}
+
+/* Style for menu bar */
+.menu {
+    background-color: #333; /* Set background color to dark grey */
+    color: #fff; /* Set font color to white */
+    padding: 1rem; /* Add padding to the menu */
+    display: flex; /* Use flexbox for positioning */
+    justify-content: end; /* Align menu items to the right */
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline-block; /* Display menu items horizontally */
+    margin-right: 2rem; /* Add margin between menu items */
+}
+
+.menu li:last-child {
+    margin-right: 0; /* Remove margin from the last menu item */
+}
+
+.menu a {
+    color: #fff; /* Set font color to white */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.menu a:hover, .logout:hover {
+    text-decoration: underline; /* Add underline to links on hover */
+}
+
+/* Style for logout button */
+.logout {
+    border: none; /* Remove border */
+    background: transparent; /* Set background to transparent */
+    color: #fff; /* Set font color to white */
+    font-size: 16px; /* Set font size */
+}
